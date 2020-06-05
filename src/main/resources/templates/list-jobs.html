@@ -12,6 +12,11 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+    <table>
+        <thead>Jobs</thead>
+        <tr th:each="job : ${jobs}">job</tr>
+        <td th:text="${job}">job</td>
+    </table>
 </div>
 
 </body>

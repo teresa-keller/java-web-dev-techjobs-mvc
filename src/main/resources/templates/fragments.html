@@ -27,5 +27,12 @@
         </div>
     </div>
 
+    <th:block th:fragment="list-loop">
+        <table class="job-listing">
+            <tr th:each="job : ${jobs}">
+                <td th:text="${job}"></td>
+            </tr>
+        </table>
+    </th:block>
 </body>
 </html>

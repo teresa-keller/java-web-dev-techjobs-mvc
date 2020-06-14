@@ -24,21 +24,24 @@
                 <label th:for="${column.key}" th:text="${column.value}"></label>
             </span>
 
+
         </p>
         <p>
             <label for="searchTerm">Keyword:</label>
             <input type="text" name="searchTerm" id="searchTerm" />
+
         </p>
 
         <input type="submit" value="Search" />
+
     </form>
 
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
-
-   <div th:replace="fragments :: list-loop"></div>
-
+<div>
+    <table th:replace="fragments :: list-loop"></table>
+</div>
 </div>
 
 </body>

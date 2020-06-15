@@ -25,7 +25,7 @@
                         <li th:if="${category.key == 'all'}">
                             <a th:href="@{/list/jobs(column=${'all'},value=${'all'})}">View All</a>
                         </li>
-                        <li th:each="item : ${category.value}"th:unless="${category.key == 'all'}" >
+                        <li th:each="item : ${category.value}" th:unless="${category.key == 'all'}" >
                             <a th:href="@{/list/jobs(column=${category.key},value=${item})}" th:text="${item}"></a>
                         </li>
                     </ul>

@@ -43,10 +43,4 @@ public class SearchController {
         model.addAttribute("jobs", jobs);
         return "search";
     }
-
-//    @RequestMapping("results")
-//    public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm) {
-//
-//        return "search/results";
-//    }
 }
